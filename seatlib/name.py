@@ -1,7 +1,7 @@
 import os.path
 
 def read(name):
-    filepath = 'data/' + name + '/name.txt'
+    filepath = name + '/name.txt'
     if os.path.exists(filepath):
         fp = open(filepath,'r')
         txt = fp.read()
@@ -13,6 +13,6 @@ def read(name):
         for i in tmp:
             if len(i) == 0: continue
             result.append(i)
-        return result
+        return result if len(result) != 0 else 0
     else: return 0
 
