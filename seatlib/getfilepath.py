@@ -18,4 +18,4 @@ def selectclass():
         print(count,':   ',i)
         count += 1
     put = int(input('\n请选择班级（序号）：'))
-    return classlist[put] if put <= count-1 and put >= 0 else -1
+    return classlist[put] if put <= count-1 and put >= 0 else 0
