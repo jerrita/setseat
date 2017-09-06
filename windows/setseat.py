@@ -50,7 +50,7 @@ for i in classdata:
         seattable[n].append(namelist.pop())
     n += 1
 
-t = path.split('/')[1].split('-')
+t = path.split('\\')[1].split('-')
 if not os.path.isdir('output'): os.mkdir('output')
 seatlib.savefile.savefile('output\\高%s（%s）班坐次表.xls'%(ntc(t[0]),t[1]),seattable)
 end()
