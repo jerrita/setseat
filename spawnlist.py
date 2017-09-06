@@ -7,7 +7,8 @@ def setseatdata(classname,classdir):
     fp = open(classdir,'w')
     t = 1
     for i in range(x):
-        fp.write(input('请输入第%d列人数：'%t) + ' ')
+        k = input('请输入第%d列人数：' % t)
+        fp.write(('0' if len(k) == 0 else k) + ' ')
         t += 1
     print('录入完成！运行setseat即可随机排位')
     fp.close()

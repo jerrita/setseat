@@ -11,3 +11,4 @@ def savefile(filename,seattable):
         x += 1
         y = 0
     wbk.save(filename)
+    print('\n生成成功！生成文件保存在',filename.split('/')[1])
